@@ -13,6 +13,15 @@
    - [Database Schema](#33-database-schema)
 4. [Questions](#4-questions)
 
+- External Documents
+  - [Figma Slides](https://www.figma.com/design/Ygl48isZkqzXW8TmQKqIko/Contact-Entry?node-id=0-1&t=dhwOyY3iCaQO9rDj-1)
+- Nuget Packages
+  - [Dapper](https://github.com/DapperLib/Dapper)
+  - [FusionCache](https://github.com/ZiggyCreatures/FusionCache)
+  - [Microsoft Resilience](https://github.com/dotnet/extensions/blob/main/src/Libraries/Microsoft.Extensions.Http.Resilience/README.md)
+  - [XUnit](https://github.com/xunit/xunit)
+  - [Playwright](https://github.com/microsoft/playwright)
+
 ---
 
 ## **1. Overview**
@@ -35,12 +44,14 @@ Enable sales personnel to efficiently collect and manage potential customer info
 
 - **Frontend:** Vue 3 on Vite for a modern, responsive UI
 - **Backend:** .NET Core for API services
-  - Dapper for SQL call management
-  - FusionCache for quick responses
-  - Microsoft Resilience for retry and fallback logic
-- **Database:** MS SQL for structured data storage
-- **Authentication:** OAuth 2.0 / JWT for secure user access
-
+  - **Dapper** for SQL call management
+  - **FusionCache** for quick responses
+  - **Microsoft Resilience** for retry and fallback logic
+- **Database:** **MSSQL** for structured data storage
+- **Authentication:** **OAuth 2.0 / JWT** for secure user access
+- **Testing**
+  - **XUnit** Framework
+  - **Playwright** For front end and end to end testing
 ---
 
 ## **3. System Components**
