@@ -93,7 +93,6 @@ Role {
     VARCHAR RoleName
 }
 
-Customer ||--o| CustomerTransfer : has
 Customer {
     BIGINT CustomerID
     DATETIME DateAdded
