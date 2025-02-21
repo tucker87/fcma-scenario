@@ -93,6 +93,7 @@ Role {
     VARCHAR RoleName
 }
 
+Customer ||--|{ CustomerLoanType : interested
 Customer {
     BIGINT CustomerID
     DATETIME DateAdded
@@ -112,6 +113,10 @@ CustomerTransfer {
     BIGINT CustomerID
     GUID LoanOfficerID
     DATETIME DateTransferred
+}
+CustomerLoanType {
+    SMALLINT CustomerLoanTypeID
+    VARCHAR CustomerLoanTypeName
 }
 ```
 
