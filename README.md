@@ -77,10 +77,10 @@ Users will make entries into the Customers Table
 
 ```mermaid
 erDiagram
-Users ||--o{ Role : has
-Users ||--|{ Customer : makes
-Users ||--|{ CustomerTransfer : makes
-Users {
+User ||--o{ Role : has
+User ||--|{ Customer : enters
+User ||--|{ CustomerTransfer : initiates
+User {
     GUID UserID
     VARCHAR FirstName
     VARCHAR LastName
@@ -114,8 +114,14 @@ CustomerTransfer {
     GUID LoanOfficerID
     DATETIME DateTransferred
 }
+CustomerLoanType||--|| LoanType : links
 CustomerLoanType {
-    SMALLINT CustomerLoanTypeID
+    BIGINT CustomerLoanTypeID
+    BIGINT CustomerID
+    SMALLINT LoanTypeID
+}
+LoanType {
+    SMALLINT LoanTypeID
     VARCHAR CustomerLoanTypeName
 }
 ```
